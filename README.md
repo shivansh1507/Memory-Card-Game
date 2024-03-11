@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+The project is live at [LiveNow](https://memory-card-game-bottleshop.netlify.app/)
+![Screenshot](https://raw.githubusercontent.com/shivansh1507/Memory-Card-Game/main/memory%20Card%20game%20look.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screenshot](https://raw.githubusercontent.com/shivansh1507/Memory-Card-Game/main/Bottleshop%20win%20page.png)
 
-## Available Scripts
+## Card Component
 
-In the project directory, you can run:
+    Represents an individual card ✓
+    Shows a hidden side initially (e.g., a question mark) and reveals a number or symbol when clicked ✓
 
-### `npm start`
+##  GameBoard Component
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Displays a grid of Card components ✓
+    Uses useState to manage game state, including card values, flip state, and match checking ✓
+    Shuffles card values randomly at the start of the game ✓
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Game Logic
 
-### `npm test`
+    Allows flipping two cards at a time ✓
+    Keeps flipped cards face-up if they match; otherwise, flips them back face-down ✓
+    Tracks and displays the player's score (number of matched pairs) ✓
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##  Win Condition
 
-### `npm run build`
+    Checks if all pairs have been matched and displays a victory message when the game is won ✓
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##  User Interaction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Ensures cards respond correctly to user clicks, preventing more than two cards from being flipped simultaneously ✓
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Bonus Features
 
-### `npm run eject`
+    A timer tracks how long it takes to complete the game ✓
+    A "New Game" button to reset the game and shuffle the cards for a new round ✓
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+##  Additional Enhancements
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    Made the game responsive to different screen sizes with media queries ✓
+    Added a celebration animation when the game is won ✓
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##  Considerations
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Ensure the following for completeness and a polished experience:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Testing across devices: Verify the game's responsiveness and functionality on various devices and screen sizes.
+    Code optimization: Review the code for any potential optimizations or refactorings for readability and performance.
+    User feedback: Test the game with actual users for feedback on usability, difficulty, and enjoyment.
